@@ -125,13 +125,13 @@
 
 
     if (task61 == 0) {
-      console.log("(" + task61 +  ")");
+      console.log("(" + task61 + ")");
     }
     if (task62 == 0) {
-      console.log("(" + task62 +  ")");
+      console.log("(" + task62 + ")");
     }
     if (task63 == 0) {
-      console.log("(" + task63 +  ")");
+      console.log("(" + task63 + ")");
     }
     if (task61 == -1) {
       console.log("[" + task61 + "]");
@@ -316,6 +316,54 @@
 
     console.log("------------------Užduotis 7-------------------");
 
+    let candles = Math.floor(Math.random() * 3005) + 5;
+    let price = 1;
+    let discount = 0;
+    console.log("Žvakių kiekis: " + candles);
+    console.log("-------------");
+    if (candles > 1000) {
+      discount = (candles * 3) / 100;
+    }
+    if (candles > 2000) {
+      discount = (candles * 4) / 100;
+    }
+    let total = candles * price - discount;
+    console.log("Kaina: " + total);
+    console.log("Nuolaida: " + discount);
+
+
+    console.log("------------------Užduotis 7-------------------");
+
+
+    let numA = Math.round(Math.random() * 100);
+    let numB = Math.round(Math.random() * 100);
+    let numC = Math.round(Math.random() * 100);
+    let numD = 0
+    let numE = 0
+    let numF = 0
+    let middle = Math.round((numA + numB + numC) / 3);
+    if (10 < numA < 90) {
+      numD = numA;
+    }
+    else {
+      numD = 0;
+    }
+    if (10 < numB < 90) {
+     numE = numB;
+    }
+    else {
+      numE = 0;
+    }
+    if (10 < numC < 90) {
+       numF = numC;
+    }
+    else {
+      numF = 0;
+    }
+    let middle2 = Math.round((numD + numE + numF) / 3);
+    console.log(numA, numB, numC);
+    console.log(middle);
+    console.log("10<<90: " + middle2);
   </script>
 </body>
 
