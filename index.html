@@ -2,128 +2,321 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P5U1</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P5U1</title>
 </head>
 
 <body>
-    <script>
-        console.log("bandau");
-        let name = "Donatas";
-        let lastname = "Kubilius";
-        let date_of_birth = 1990;
-        let current_year = 2022;
-        console.log("Aš esu " + name + " " + lastname + ". Man yra " + (current_year - date_of_birth) + " metai");
-        console.log("------------------Užduotis 2-------------------");
-        let number1 = Math.round((Math.random() * 4));
-        let number2 = Math.round((Math.random() * 4));
-        console.log(number1);
-        console.log(number2);
-        if (number1 > number2) {
-            console.log(Math.round((number1 / number2) * 100) / 100);
-        }
-        else {
-            console.log(Math.round((number2 / number1) * 100) / 100);
-        }
-        console.log("------------------Užduotis 3-------------------");
-        let number3 = Math.round((Math.random() * 25));
-        let number4 = Math.round((Math.random() * 25));
-        let number5 = Math.round((Math.random() * 25));
-        console.log(number3);
-        console.log(number4);
-        console.log(number5);
-        console.log("----------------------------------------------");
+  <script>
+    console.log("bandau");
+    let name = "Donatas";
+    let lastname = "Kubilius";
+    let date_of_birth = 1990;
+    let current_year = 2022;
+    console.log("Aš esu " + name + " " + lastname + ". Man yra " + (current_year - date_of_birth) + " metai");
+    console.log("------------------Užduotis 2-------------------");
+    let number1 = Math.round((Math.random() * 4));
+    let number2 = Math.round((Math.random() * 4));
+    console.log(number1);
+    console.log(number2);
+    if (number1 > number2) {
+      console.log(Math.round((number1 / number2) * 100) / 100);
+    }
+    else {
+      console.log(Math.round((number2 / number1) * 100) / 100);
+    }
+    console.log("------------------Užduotis 3-------------------");
+    let number3 = Math.round((Math.random() * 25));
+    let number4 = Math.round((Math.random() * 25));
+    let number5 = Math.round((Math.random() * 25));
+    console.log(number3);
+    console.log(number4);
+    console.log(number5);
+    console.log("----------------------------------------------");
 
-        if ((number3 >= number4 && number4 >= number5) ||
-            (number3 <= number4 && number4 <= number5)) {
-            console.log(number4);
-        }                          
-        if ((number4 >= number5 && number5 >= number3) ||
-            (number4 <= number5 && number5 <= number3)) {
-            console.log(number5);
-        }                          
-        if ((number5 >= number3 && number3 >= number4) ||
-            (number5 <= number3 && number3 <= number4)) {
-            console.log(number3);
-        }                          
-        console.log("------------------Užduotis 4-------------------");
+    if ((number3 >= number4 && number4 >= number5) ||
+      (number3 <= number4 && number4 <= number5)) {
+      console.log(number4);
+    }
+    if ((number4 >= number5 && number5 >= number3) ||
+      (number4 <= number5 && number5 <= number3)) {
+      console.log(number5);
+    }
+    if ((number5 >= number3 && number3 >= number4) ||
+      (number5 <= number3 && number3 <= number4)) {
+      console.log(number3);
+    }
+    console.log("------------------Užduotis 4-------------------");
 
-        let a = Math.round((Math.random()*10)+1);
-        let b = Math.round((Math.random()*10)+1);
-        let c = Math.round((Math.random()*10)+1);
-        console.log(a, b, c);
+    let a = Math.round((Math.random() * 10) + 1);
+    let b = Math.round((Math.random() * 10) + 1);
+    let c = Math.round((Math.random() * 10) + 1);
+    console.log(a, b, c);
 
-        if (a + b > c && a + c > b && b + c > a) {
-            console.log("trikampis");
-        }
+    if (a + b > c && a + c > b && b + c > a) {
+      console.log("trikampis");
+    }
 
-        console.log("------------------Užduotis 5-------------------");
+    console.log("------------------Užduotis 5-------------------");
 
-        let task5 = Math.round(Math.random() * 2);
-        let task51 = Math.round(Math.random() * 2);
-        let task52 = Math.round(Math.random() * 2);
-        let task53 = Math.round(Math.random() * 2);
+    let task5 = Math.round(Math.random() * 2);
+    let task51 = Math.round(Math.random() * 2);
+    let task52 = Math.round(Math.random() * 2);
+    let task53 = Math.round(Math.random() * 2);
 
-        console.log(task5, task51, task52, task53);
+    console.log(task5, task51, task52, task53);
 
-        let count0 = 0;
-        let count1 = 0;
-        let count2 = 0;
+    let count0 = 0;
+    let count1 = 0;
+    let count2 = 0;
 
-      if (task5 == 0) {
-        count0++
-      }
-      if (task51 == 0) {
-        count0++
-      }
-      if (task52 == 0) {
-        count0++
-      }
-      if (task53 == 0) {
-        count0++
-      }
+    if (task5 == 0) {
+      count0++
+    }
+    if (task51 == 0) {
+      count0++
+    }
+    if (task52 == 0) {
+      count0++
+    }
+    if (task53 == 0) {
+      count0++
+    }
 
-      console.log("Viso nulių: " + count0);
+    console.log("Viso nulių: " + count0);
 
-      if (task5 == 1) {
-        count1++
-      }
-      if (task51 == 1) {
-        count1++
-      }
-      if (task52 == 1) {
-        count1++
-      }
-      if (task53 == 1) {
-        count1++
-      }
+    if (task5 == 1) {
+      count1++
+    }
+    if (task51 == 1) {
+      count1++
+    }
+    if (task52 == 1) {
+      count1++
+    }
+    if (task53 == 1) {
+      count1++
+    }
 
-      console.log("Viso vienetų: " + count1);
+    console.log("Viso vienetų: " + count1);
 
-      if (task5 == 2) {
-        count2++
-      }
-      if (task51 == 2) {
-        count2++
-      }
-      if (task52 == 2) {
-        count2++
-      }
-      if (task53 == 2) {
-        count2++
-      }
+    if (task5 == 2) {
+      count2++
+    }
+    if (task51 == 2) {
+      count2++
+    }
+    if (task52 == 2) {
+      count2++
+    }
+    if (task53 == 2) {
+      count2++
+    }
 
-      console.log("Viso dvejetų: " + count2);
+    console.log("Viso dvejetų: " + count2);
 
-      console.log("------------------Užduotis 6-------------------");
+    console.log("------------------Užduotis 6-------------------");
 
-      let task61 = Math.round(Math.round() ) * 20 - 10
-      console.log(task61);
+    let task61 = Math.floor(Math.random() * 21) - 10
+    let task62 = Math.floor(Math.random() * 21) - 10
+    let task63 = Math.floor(Math.random() * 21) - 10
 
 
-    </script>
+    if (task61 == 0) {
+      console.log("(" + task61 +  ")");
+    }
+    if (task62 == 0) {
+      console.log("(" + task62 +  ")");
+    }
+    if (task63 == 0) {
+      console.log("(" + task63 +  ")");
+    }
+    if (task61 == -1) {
+      console.log("[" + task61 + "]");
+    }
+    if (task62 == -1) {
+      console.log("[" + task62 + "]");
+    }
+    if (task63 == -1) {
+      console.log("[" + task63 + "]");
+    }
+    if (task61 == -2) {
+      console.log("[" + task61 + "]");
+    }
+    if (task62 == -2) {
+      console.log("[" + task62 + "]");
+    }
+    if (task63 == -2) {
+      console.log("[" + task63 + "]");
+    }
+    if (task61 == -3) {
+      console.log("[" + task61 + "]");
+    }
+    if (task62 == -3) {
+      console.log("[" + task62 + "]");
+    }
+    if (task63 == -3) {
+      console.log("[" + task63 + "]");
+    }
+    if (task61 == -4) {
+      console.log("[" + task61 + "]");
+    }
+    if (task62 == -4) {
+      console.log("[" + task62 + "]");
+    }
+    if (task63 == -4) {
+      console.log("[" + task63 + "]");
+    }
+    if (task61 == -5) {
+      console.log("[" + task61 + "]");
+    }
+    if (task62 == -5) {
+      console.log("[" + task62 + "]");
+    }
+    if (task63 == -5) {
+      console.log("[" + task63 + "]");
+    }
+    if (task61 == -6) {
+      console.log("[" + task61 + "]");
+    }
+    if (task62 == -6) {
+      console.log("[" + task62 + "]");
+    }
+    if (task63 == -6) {
+      console.log("[" + task63 + "]");
+    }
+    if (task61 == -7) {
+      console.log("[" + task61 + "]");
+    }
+    if (task62 == -7) {
+      console.log("[" + task62 + "]");
+    }
+    if (task63 == -7) {
+      console.log("[" + task63 + "]");
+    }
+    if (task61 == -8) {
+      console.log("[" + task61 + "]");
+    }
+    if (task62 == -8) {
+      console.log("[" + task62 + "]");
+    }
+    if (task63 == -8) {
+      console.log("[" + task63 + "]");
+    }
+    if (task61 == -9) {
+      console.log("[" + task61 + "]");
+    }
+    if (task62 == -9) {
+      console.log("[" + task62 + "]");
+    }
+    if (task63 == -9) {
+      console.log("[" + task63 + "]");
+    }
+    if (task61 == -10) {
+      console.log("[" + task61 + "]");
+    }
+    if (task62 == -10) {
+      console.log("[" + task62 + "]");
+    }
+    if (task63 == -10) {
+      console.log("[" + task63 + "]");
+    }
+    if (task61 == 1) {
+      console.log("{" + task61 + "}");
+    }
+    if (task62 == 1) {
+      console.log("{" + task62 + "}");
+    }
+    if (task63 == 1) {
+      console.log("{" + task63 + "}");
+    }
+    if (task61 == 2) {
+      console.log("{" + task61 + "}");
+    }
+    if (task62 == 2) {
+      console.log("{" + task62 + "}");
+    }
+    if (task63 == 2) {
+      console.log("{" + task63 + "}");
+    }
+    if (task61 == 3) {
+      console.log("{" + task61 + "}");
+    }
+    if (task62 == 3) {
+      console.log("{" + task62 + "}");
+    }
+    if (task63 == 3) {
+      console.log("{" + task63 + "}");
+    }
+    if (task61 == 4) {
+      console.log("{" + task61 + "}");
+    }
+    if (task62 == 4) {
+      console.log("{" + task62 + "}");
+    }
+    if (task63 == 4) {
+      console.log("{" + task63 + "}");
+    }
+    if (task61 == 5) {
+      console.log("{" + task61 + "}");
+    }
+    if (task62 == 5) {
+      console.log("{" + task62 + "}");
+    }
+    if (task63 == 5) {
+      console.log("{" + task63 + "}");
+    }
+    if (task61 == 6) {
+      console.log("{" + task61 + "}");
+    }
+    if (task62 == 6) {
+      console.log("{" + task62 + "}");
+    }
+    if (task63 == 6) {
+      console.log("{" + task63 + "}");
+    }
+    if (task61 == 7) {
+      console.log("{" + task61 + "}");
+    }
+    if (task62 == 7) {
+      console.log("{" + task62 + "}");
+    }
+    if (task63 == 7) {
+      console.log("{" + task63 + "}");
+    }
+    if (task61 == 8) {
+      console.log("{" + task61 + "}");
+    }
+    if (task62 == 8) {
+      console.log("{" + task62 + "}");
+    }
+    if (task63 == 8) {
+      console.log("{" + task63 + "}");
+    }
+    if (task61 == 9) {
+      console.log("{" + task61 + "}");
+    }
+    if (task62 == 9) {
+      console.log("{" + task62 + "}");
+    }
+    if (task63 == 9) {
+      console.log("{" + task63 + "}");
+    }
+    if (task61 == 10) {
+      console.log("{" + task61 + "}");
+    }
+    if (task62 == 10) {
+      console.log("{" + task62 + "}");
+    }
+    if (task63 == 10) {
+      console.log("{" + task63 + "}");
+    }
+
+    console.log("------------------Užduotis 7-------------------");
+
+  </script>
 </body>
 
 </html>
